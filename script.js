@@ -368,8 +368,8 @@ function startAuto() {
   slideTimer = setInterval(() => goSlide(slideIdx + 1), DELAY);
 }
 
-// Слайды = OBL-обложки проектов (генерируется через node slides.js)
-const _slides = window.SLIDES_MANIFEST || [];
+// Слайды = OBL1/OBL2/... из проектов, случайно перемешанные
+const _slides = (window.SLIDES_MANIFEST || []).slice().sort(() => Math.random() - 0.5);
 _slides.forEach(s => addSlide(s.src));
 initSlideshow();
 
@@ -455,11 +455,11 @@ function getCover(id) {
   return src ? `projects/${id}/${src}` : null;
 }
 
-// Галерея — все фото кроме OBL
+// Галерея — все фото кроме OBL, OBL1, OBL2, ...
 function getGalleryImages(id) {
   const files = PM[id] || [];
   return files
-    .filter(f => f.replace(/\.[^.]+$/, '').toUpperCase() !== 'OBL')
+    .filter(f => !f.replace(/\.[^.]+$/, '').toUpperCase().startsWith('OBL'))
     .map(f => `projects/${id}/${f}`);
 }
 

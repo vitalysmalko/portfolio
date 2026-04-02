@@ -20,6 +20,14 @@ function findObl(files) {
   return files.find(f => path.basename(f, path.extname(f)).toUpperCase() === 'OBL') || null;
 }
 
+// OBL1, OBL2, ... — кандидаты для слайдшоу
+function findOblSlides(files) {
+  return files.filter(f => {
+    const name = path.basename(f, path.extname(f)).toUpperCase();
+    return name.startsWith('OBL') && name !== 'OBL';
+  });
+}
+
 const projectsDir = path.join(__dirname, 'projects');
 if (!fs.existsSync(projectsDir)) fs.mkdirSync(projectsDir);
 
@@ -33,8 +41,11 @@ folders.forEach(folder => {
   const files = images(path.join(projectsDir, folder));
   projectsManifest[folder] = files;
   const obl = findObl(files);
-  if (obl) slidesManifest.push({ src: `projects/${folder}/${obl}`, project: folder });
-  console.log(`✓ "${folder}" (${files.length})${obl ? ' [OBL: ' + obl + ']' : ''}`);
+  const oblSlides = findOblSlides(files);
+  // Если есть OBL1/OBL2 — берём их для слайдшоу; иначе fallback на OBL
+  const slideFiles = oblSlides.length > 0 ? oblSlides : (obl ? [obl] : []);
+  slideFiles.forEach(f => slidesManifest.push({ src: `projects/${folder}/${f}`, project: folder }));
+  console.log(`✓ "${folder}" (${files.length})${obl ? ' [cover: ' + obl + ']' : ''}${slideFiles.length ? ' [slides: ' + slideFiles.length + ']' : ''}`);
 });
 
 fs.writeFileSync(
