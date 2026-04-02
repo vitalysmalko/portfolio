@@ -368,8 +368,29 @@ function startAuto() {
   slideTimer = setInterval(() => goSlide(slideIdx + 1), DELAY);
 }
 
-// Слайды = OBL1/OBL2/... из проектов, случайно перемешанные
-const _slides = (window.SLIDES_MANIFEST || []).slice().sort(() => Math.random() - 0.5);
+// Перемешиваем слайды так, чтобы один проект не шёл дважды подряд
+function shuffleNoConsec(slides) {
+  const groups = {};
+  slides.forEach(s => {
+    if (!groups[s.project]) groups[s.project] = [];
+    groups[s.project].push(s);
+  });
+  Object.values(groups).forEach(arr => arr.sort(() => Math.random() - 0.5));
+
+  const result = [];
+  const keys = Object.keys(groups);
+  while (result.length < slides.length) {
+    const last = result.length ? result[result.length - 1].project : null;
+    const avail = keys.filter(k => groups[k].length > 0 && k !== last);
+    const pool = avail.length ? avail : keys.filter(k => groups[k].length > 0);
+    if (!pool.length) break;
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    result.push(groups[pick].pop());
+  }
+  return result;
+}
+
+const _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
 _slides.forEach(s => addSlide(s.src));
 initSlideshow();
 
