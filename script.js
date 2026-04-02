@@ -217,7 +217,7 @@ const PROJECTS = [
     category: 'music-video',
     title: 'THE FEARFUL WORLD WE CREATED',
     subtitle: 'Music Video',
-    desc: '',
+    desc: 'Shot on iPhone 13',
     stills: [],
     meta: [
       { label: 'YEAR', value: '2025' },
