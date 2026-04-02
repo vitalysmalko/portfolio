@@ -213,6 +213,20 @@ const PROJECTS = [
   },
 
   {
+    id: 'ohota',
+    category: 'music-video',
+    title: 'THE FEARFUL WORLD WE CREATED',
+    subtitle: 'Music Video',
+    desc: '',
+    stills: [],
+    meta: [
+      { label: 'YEAR', value: '2025' },
+    ],
+    link: 'https://vimeo.com/1179555315',
+    linkLabel: 'WATCH',
+  },
+
+  {
     id: 'yuzhniy sever - zemlya',
     category: 'music-video',
     title: 'ZEMLYA',

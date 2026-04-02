@@ -213,6 +213,21 @@ window.PROJECTS_MANIFEST = {
     "Still 2025-07-07 014808_2.4.1.jpg",
     "Still 2025-07-07 021243_1.4.6.jpg"
   ],
+  "ohota": [
+    "OBL.jpg",
+    "Still 2026-04-02 152312_1.1.1.jpg",
+    "Still 2026-04-02 152312_1.1.10.jpg",
+    "Still 2026-04-02 152312_1.1.11.jpg",
+    "Still 2026-04-02 152312_1.1.12.jpg",
+    "Still 2026-04-02 152312_1.1.13.jpg",
+    "Still 2026-04-02 152312_1.1.2.jpg",
+    "Still 2026-04-02 152312_1.1.3.jpg",
+    "Still 2026-04-02 152312_1.1.5.jpg",
+    "Still 2026-04-02 152312_1.1.6.jpg",
+    "Still 2026-04-02 152312_1.1.7.jpg",
+    "Still 2026-04-02 152312_1.1.8.jpg",
+    "Still 2026-04-02 152312_1.1.9.jpg"
+  ],
   "ritual-prologue": [
     "OBL.jpg",
     "Still 2025-02-28 031528_1.1.1.jpg",
@@ -451,6 +466,10 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/menuet/OBL.jpg",
     "project": "menuet"
+  },
+  {
+    "src": "projects/ohota/OBL.jpg",
+    "project": "ohota"
   },
   {
     "src": "projects/ritual-prologue/OBL.jpg",
