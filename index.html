@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitaly Smalko — Director of Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-home">
+
+  <!-- ░░ 1. SLIDESHOW — fixed, full screen, z-index 0 ░░ -->
+  <div id="slideshow">
+    <!-- src подставляется из script.js через HOME_SLIDES -->
+  </div>
+
+  <!-- ░░ 2. SLIDE INFO — top-right (home only) ░░ -->
+  <div class="slide-info" id="slide-info">
+    <span id="slide-title-el"></span>
+  </div>
+
+<!-- ░░ 4. LEFT PANEL ░░ -->
+  <aside class="panel" id="panel">
+    <div class="panel-brand">
+      <a class="p-name" data-page="home">VITALY SMALKO</a>
+      <span class="p-role">DIRECTOR OF PHOTOGRAPHY</span>
+    </div>
+    <nav class="p-nav" id="p-nav">
+      <a data-page="film">FILM</a>
+      <a data-page="commercial">COMMERCIAL</a>
+      <a data-page="music-video">MUSIC VIDEO</a>
+      <a data-page="reels">REELS</a>
+      <a data-page="contact">CONTACT</a>
+    </nav>
+    <nav class="proj-panel-nav" id="proj-panel-nav"></nav>
+  </aside>
+
+  <!-- ░░ 5. MOBILE HEADER ░░ -->
+  <header class="mob-header" id="mob-header">
+    <button class="mob-back" id="mob-back" aria-label="Back">
+      <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+        <line x1="20" y1="5" x2="2" y2="5" stroke="white" stroke-width="0.8"/>
+        <polyline points="6,1 2,5 6,9" fill="none" stroke="white" stroke-width="0.8"/>
+      </svg>
+    </button>
+    <div class="mob-brand">
+      <div class="mob-brand-row">
+        <a class="mob-name" data-page="home">VITALY SMALKO</a>
+        <span class="mob-page-title" id="mob-page-title"></span>
+      </div>
+      <span class="mob-role">DIRECTOR OF PHOTOGRAPHY</span>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ░░ 6. MOBILE NAV ░░ -->
+  <div class="mob-nav" id="mob-nav">
+    <a data-page="film">FILM</a>
+    <a data-page="commercial">COMMERCIAL</a>
+    <a data-page="music-video">MUSIC VIDEO</a>
+    <a data-page="reels">REELS</a>
+    <a data-page="contact">CONTACT</a>
+  </div>
+
+  <!-- ░░ 6b. MOBILE HOME NAV (bottom) ░░ -->
+  <nav class="mob-home-nav" id="mob-home-nav">
+    <a data-page="film">FILM</a>
+    <a data-page="commercial">COMMERCIAL</a>
+    <a data-page="music-video">MUSIC VIDEO</a>
+    <a data-page="reels">REELS</a>
+    <a data-page="contact">CONTACT</a>
+  </nav>
+
+  <!-- ░░ 7. MAIN CONTENT (category pages) ░░ -->
+  <main id="main">
+
+    <div class="page" id="page-project"></div>
+
+    <div class="page" id="page-film"         data-cat="film"></div>
+    <div class="page" id="page-commercial"   data-cat="commercial"></div>
+    <div class="page" id="page-music-video"  data-cat="music-video"></div>
+    <div class="page" id="page-brand-content"data-cat="brand-content"></div>
+    <div class="page" id="page-reels"        data-cat="reels"></div>
+
+    <div class="page" id="page-contact">
+      <div class="contact-inner">
+        <div class="contact-list">
+          <div class="crow">
+            <span class="clabel">TELEGRAM</span>
+            <a href="https://t.me/cameraeb" target="_blank">@CAMERAEB</a>
+          </div>
+          <div class="crow">
+            <span class="clabel">INSTAGRAM</span>
+            <a href="https://instagram.com/cameraeb" target="_blank">@CAMERAEB</a>
+          </div>
+          <div class="crow">
+            <span class="clabel">EMAIL</span>
+            <a href="mailto:vitalysmalko@gmail.com">VITALYSMALKO@GMAIL.COM</a>
+          </div>
+        </div>
+        <p class="cnote">MOSCOW — AVAILABLE FOR TRAVEL</p>
+      </div>
+    </div>
+
+  <footer class="site-footer">
+    <a href="https://t.me/cameraeb" target="_blank">TELEGRAM</a>
+    <span>/</span>
+    <a href="https://instagram.com/cameraeb" target="_blank">INSTAGRAM</a>
+    <span>/</span>
+    <a href="mailto:vitalysmalko@gmail.com">MAIL</a>
+  </footer>
+
+  </main>
+
+
+  <!-- ░░ 9. LIGHTBOX ░░ -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">✕</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- ░░ 10. PROJECT MODAL (не используется, оставлен как запас) ░░ -->
+  <div class="modal-bg" id="modal-bg">
+    <div class="modal" id="modal">
+      <button class="modal-x" id="modal-x">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="projects/manifest.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
