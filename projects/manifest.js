@@ -361,6 +361,16 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.37.1.jpg",
     "Untitled_1.38.1.jpg"
   ],
+  "vmesto": [
+    "cover.jpg",
+    "still-1.jpg",
+    "still-2.jpg",
+    "still-3.jpg",
+    "still-4.jpg",
+    "still-5.jpg",
+    "still-6.jpg",
+    "still-7.jpg"
+  ],
   "vodopady - eto bil son": [
     "OBL.jpg",
     "Still 2024-10-09 052449_1.1.1.jpg",
@@ -486,6 +496,10 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/trymerry/OBL.jpg",
     "project": "trymerry"
+  },
+  {
+    "src": "projects/vmesto/cover.jpg",
+    "project": "vmesto"
   },
   {
     "src": "projects/vodopady - eto bil son/OBL.jpg",

@@ -239,6 +239,19 @@ const PROJECTS = [
     linkLabel: 'WATCH',
   },
 
+  {
+    id: 'vmesto',
+    category: 'music-video',
+    title: 'VMESTO',
+    subtitle: 'OG Prince',
+    desc: '',
+    meta: [
+      { label: 'YEAR', value: '2024' },
+    ],
+    link: 'https://youtu.be/f6myek4a61Y?si=zuiQ3zIv-fmKKVxK',
+    linkLabel: 'WATCH',
+  },
+
   // ── BRAND CONTENT ───────────────────────────────────────────
   // {
   //   id: 'brand-id',
