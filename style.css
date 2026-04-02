@@ -65,9 +65,9 @@ button { background: none; border: none; color: inherit; cursor: pointer; font-f
   flex-direction: column;
   align-items: flex-end;
   gap: 2px;
-  font-size: 18px;
+  font-size: 26px;
   letter-spacing: 2px;
-  line-height: 26px;
+  line-height: 34px;
   pointer-events: none;
   transition: opacity 0.4s;
 }
@@ -75,6 +75,7 @@ button { background: none; border: none; color: inherit; cursor: pointer; font-f
 #slide-title-el {
   color: var(--white);
   cursor: pointer;
+  pointer-events: all;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -360,6 +361,9 @@ body.is-project .proj-panel-nav {
   z-index: 5;
   min-height: 100vh;
 }
+
+/* Slideshow only on home */
+body:not(.is-home) #slideshow { display: none; }
 
 /* Home: transparent so slideshow shows through */
 body.is-home #main {
@@ -1146,6 +1150,19 @@ body.is-home .site-footer {
   body.is-project #main { margin-left: 0; }
   body.is-project #slideshow { display: none; }
 }
+
+/* ─── FADE OVERLAY ───────────────────────────────────────────────── */
+#fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.32s ease;
+}
+
+
 
 @media (max-width: 500px) {
   .pgrid { grid-template-columns: 1fr; }

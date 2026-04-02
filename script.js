@@ -30,7 +30,6 @@ const PROJECTS = [
     meta: [
       { label: 'YEAR',      value: '2025' },
       { label: 'DIRECTOR',  value: 'VLADIMIR REPIN' },
-      { label: 'STATUS',    value: 'FESTIVAL RUN' },
     ],
     link: 'https://www.youtube.com/watch?v=na8apsjd-bs',
     linkLabel: 'WATCH',
@@ -301,13 +300,15 @@ function goSlide(n) {
   if (titleEl) {
     titleEl.textContent = proj ? proj.title : (projectId || '');
     titleEl.dataset.projectId = projectId || '';
+    titleEl.href = proj ? `/${proj.category}/${slugify(proj.id)}` : '#';
   }
 }
 
 if (titleEl) {
-  titleEl.addEventListener('click', () => {
+  titleEl.addEventListener('click', (e) => {
+    e.preventDefault();
     const id = titleEl.dataset.projectId;
-    if (id) openProject(id);
+    if (id) { flashFade(() => openProject(id)); }
   });
 }
 
@@ -343,7 +344,19 @@ const catNames = { film:'FILM', commercial:'COMMERCIAL', 'music-video':'MUSIC VI
 
 let prevCat = null; // запоминаем откуда пришли
 
-function navigate(page, fromCat) {
+function slugify(s) {
+  return s.toLowerCase()
+    .replace(/\s*-\s*/g, '-')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '');
+}
+
+function navigate(page, fromCat, { push = true } = {}) {
+  if (push && page !== 'project') {
+    const url = page === 'home' ? '/' : `/${page}`;
+    history.pushState({ page, fromCat }, '', url);
+  }
+
   Object.values(pageEls).forEach(p => p && p.classList.remove('active'));
 
   if (page === 'home') {
@@ -453,7 +466,7 @@ function buildCatPage(cat, container) {
   container.querySelectorAll('[data-id]').forEach(card => {
     card.addEventListener('click', () => {
       prevCat = card.dataset.cat;
-      openProject(card.dataset.id);
+      flashFade(() => openProject(card.dataset.id));
     });
   });
 }
@@ -462,7 +475,7 @@ function buildCatPage(cat, container) {
 // ═══════════════════════════════════════════════════════════════
 //  PROJECT PAGE
 // ═══════════════════════════════════════════════════════════════
-function openProject(id) {
+function openProject(id, { push = true } = {}) {
   const p = PROJECTS.find(x => x.id === id);
   if (!p) return;
 
@@ -567,11 +580,14 @@ function openProject(id) {
 
   // BACK
   pageEls.project.querySelector('.proj-top-back')?.addEventListener('click', e => {
-    navigate(e.currentTarget.dataset.back);
+    const back = e.currentTarget.dataset.back;
+    flashFade(() => navigate(back));
   });
 
   // Имя → главная
-  pageEls.project.querySelector('.proj-top-name')?.addEventListener('click', () => navigate('home'));
+  pageEls.project.querySelector('.proj-top-name')?.addEventListener('click', () => {
+    flashFade(() => navigate('home'));
+  });
 
   // Субнав в левой панели — скролл + подсветка
   projPanelNav.querySelectorAll('a').forEach(a => {
@@ -584,7 +600,16 @@ function openProject(id) {
   });
 
   if (mobPageTitle) mobPageTitle.textContent = p.title;
-  navigate('project', backCat);
+
+  if (push) {
+    history.pushState({ page: 'project', id, fromCat: prevCat }, '', `/${p.category}/${slugify(id)}`);
+  }
+  navigate('project', backCat, { push: false });
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
 }
 
 
@@ -614,7 +639,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 //  NAV CLICKS
 // ═══════════════════════════════════════════════════════════════
 document.querySelectorAll('[data-page]').forEach(el => {
-  el.addEventListener('click', e => { e.preventDefault(); navigate(el.dataset.page); });
+  el.addEventListener('click', e => { e.preventDefault(); flashFade(() => navigate(el.dataset.page)); });
 });
 
 
@@ -623,11 +648,8 @@ document.querySelectorAll('[data-page]').forEach(el => {
 // ═══════════════════════════════════════════════════════════════
 const mobBack = document.getElementById('mob-back');
 mobBack.addEventListener('click', () => {
-  if (document.body.classList.contains('is-project')) {
-    navigate(prevCat || 'home');
-  } else {
-    navigate('home');
-  }
+  const dest = document.body.classList.contains('is-project') ? (prevCat || 'home') : 'home';
+  flashFade(() => navigate(dest));
 });
 
 const burger = document.getElementById('burger');
@@ -647,6 +669,44 @@ function closeMobNav() {
 
 
 // ═══════════════════════════════════════════════════════════════
+//  FADE TRANSITION
+// ═══════════════════════════════════════════════════════════════
+const fadeOverlay = document.getElementById('fade-overlay');
+
+function flashFade(cb) {
+  fadeOverlay.style.pointerEvents = 'all';
+  fadeOverlay.style.transition = 'opacity 0.18s ease';
+  fadeOverlay.style.opacity = '1';
+  setTimeout(() => {
+    cb();
+    fadeOverlay.style.transition = 'opacity 0.38s ease';
+    fadeOverlay.style.opacity = '0';
+    setTimeout(() => { fadeOverlay.style.pointerEvents = ''; }, 400);
+  }, 180);
+}
+
+
+// ═══════════════════════════════════════════════════════════════
+//  ROUTING — URL-based navigation
+// ═══════════════════════════════════════════════════════════════
+function routeFromUrl(push = false) {
+  const parts = location.pathname.split('/').filter(Boolean);
+  if (parts.length === 0) {
+    navigate('home', null, { push });
+  } else if (parts.length === 1) {
+    navigate(parts[0], null, { push });
+  } else if (parts.length >= 2) {
+    const [cat, slug] = parts;
+    prevCat = cat;
+    const proj = PROJECTS.find(p => slugify(p.id) === slug);
+    if (proj) openProject(proj.id, { push });
+    else navigate(cat, null, { push });
+  }
+}
+
+window.addEventListener('popstate', () => routeFromUrl(false));
+
+// ═══════════════════════════════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════════════════════════════
-navigate('home');
+routeFromUrl(false);

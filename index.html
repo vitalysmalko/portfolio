@@ -18,7 +18,7 @@
 
   <!-- ░░ 2. SLIDE INFO — top-right (home only) ░░ -->
   <div class="slide-info" id="slide-info">
-    <span id="slide-title-el"></span>
+    <a id="slide-title-el"></a>
   </div>
 
 <!-- ░░ 4. LEFT PANEL ░░ -->
@@ -28,11 +28,11 @@
       <span class="p-role">DIRECTOR OF PHOTOGRAPHY</span>
     </div>
     <nav class="p-nav" id="p-nav">
-      <a data-page="film">FILM</a>
-      <a data-page="commercial">COMMERCIAL</a>
-      <a data-page="music-video">MUSIC VIDEO</a>
-      <a data-page="reels">REELS</a>
-      <a data-page="contact">CONTACT</a>
+      <a href="/film" data-page="film">FILM</a>
+      <a href="/commercial" data-page="commercial">COMMERCIAL</a>
+      <a href="/music-video" data-page="music-video">MUSIC VIDEO</a>
+      <a href="/reels" data-page="reels">REELS</a>
+      <a href="/contact" data-page="contact">CONTACT</a>
     </nav>
     <nav class="proj-panel-nav" id="proj-panel-nav"></nav>
   </aside>
@@ -59,20 +59,20 @@
 
   <!-- ░░ 6. MOBILE NAV ░░ -->
   <div class="mob-nav" id="mob-nav">
-    <a data-page="film">FILM</a>
-    <a data-page="commercial">COMMERCIAL</a>
-    <a data-page="music-video">MUSIC VIDEO</a>
-    <a data-page="reels">REELS</a>
-    <a data-page="contact">CONTACT</a>
+    <a href="/film" data-page="film">FILM</a>
+    <a href="/commercial" data-page="commercial">COMMERCIAL</a>
+    <a href="/music-video" data-page="music-video">MUSIC VIDEO</a>
+    <a href="/reels" data-page="reels">REELS</a>
+    <a href="/contact" data-page="contact">CONTACT</a>
   </div>
 
   <!-- ░░ 6b. MOBILE HOME NAV (bottom) ░░ -->
   <nav class="mob-home-nav" id="mob-home-nav">
-    <a data-page="film">FILM</a>
-    <a data-page="commercial">COMMERCIAL</a>
-    <a data-page="music-video">MUSIC VIDEO</a>
-    <a data-page="reels">REELS</a>
-    <a data-page="contact">CONTACT</a>
+    <a href="/film" data-page="film">FILM</a>
+    <a href="/commercial" data-page="commercial">COMMERCIAL</a>
+    <a href="/music-video" data-page="music-video">MUSIC VIDEO</a>
+    <a href="/reels" data-page="reels">REELS</a>
+    <a href="/contact" data-page="contact">CONTACT</a>
   </nav>
 
   <!-- ░░ 7. MAIN CONTENT (category pages) ░░ -->
@@ -123,15 +123,10 @@
     <img id="lightbox-img" src="" alt="">
   </div>
 
-  <!-- ░░ 10. PROJECT MODAL (не используется, оставлен как запас) ░░ -->
-  <div class="modal-bg" id="modal-bg">
-    <div class="modal" id="modal">
-      <button class="modal-x" id="modal-x">✕</button>
-      <div id="modal-body"></div>
-    </div>
-  </div>
 
-  <script src="projects/manifest.js"></script>
+  <div id="fade-overlay"></div>
+
+<script src="projects/manifest.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
