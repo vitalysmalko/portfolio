@@ -361,6 +361,14 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.37.1.jpg",
     "Untitled_1.38.1.jpg"
   ],
+  "voda": [
+    "OBL.jpg",
+    "Untitled_1.12.1.jpg",
+    "Untitled_1.16.1.jpg",
+    "Untitled_1.2.1.jpg",
+    "Untitled_1.21.1.jpg",
+    "Untitled_1.24.1.jpg"
+  ],
   "vmesto": [
     "cover.jpg",
     "still-1.jpg",
@@ -496,6 +504,10 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/trymerry/OBL.jpg",
     "project": "trymerry"
+  },
+  {
+    "src": "projects/voda/OBL.jpg",
+    "project": "voda"
   },
   {
     "src": "projects/vmesto/cover.jpg",

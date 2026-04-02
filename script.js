@@ -240,6 +240,19 @@ const PROJECTS = [
   },
 
   {
+    id: 'voda',
+    category: 'music-video',
+    title: 'VODA',
+    subtitle: 'Yuzhniy Sever',
+    desc: '',
+    meta: [
+      { label: 'YEAR', value: '2024' },
+    ],
+    link: 'https://youtu.be/mQoY9tkmqoM?si=npqUw1MVBgja06B2',
+    linkLabel: 'WATCH',
+  },
+
+  {
     id: 'vmesto',
     category: 'music-video',
     title: 'VMESTO',
