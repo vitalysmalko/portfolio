@@ -334,6 +334,12 @@ function initSlideshow() {
 function goSlide(n) {
   if (!slides.length) return;
   slides[slideIdx].classList.remove('active');
+  // Новый круг — ресаффл
+  if (n >= slides.length) {
+    _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
+    _slides.forEach((s, i) => { slides[i].style.backgroundImage = `url('${s.src}')`; });
+    n = 0;
+  }
   slideIdx = ((n % slides.length) + slides.length) % slides.length;
   slides[slideIdx].classList.add('active');
   const projectId = _slides[slideIdx]?.project;
@@ -390,7 +396,7 @@ function shuffleNoConsec(slides) {
   return result;
 }
 
-const _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
+let _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
 _slides.forEach(s => addSlide(s.src));
 initSlideshow();
 
