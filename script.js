@@ -272,6 +272,7 @@ const PROJECTS = [
 // ═══════════════════════════════════════════════════════════════
 const slideshowEl = document.getElementById('slideshow');
 const titleEl     = document.getElementById('slide-title-el');
+const slideTapEl  = document.getElementById('slide-tap');
 const scCur       = document.getElementById('sc-cur');
 const scTot       = document.getElementById('sc-tot');
 
@@ -316,12 +317,22 @@ function goSlide(n) {
     titleEl.dataset.projectId = projectId || '';
     titleEl.href = proj ? `/${proj.category}/${slugify(proj.id)}` : '#';
   }
+  if (slideTapEl) {
+    slideTapEl.dataset.projectId = projectId || '';
+  }
 }
 
 if (titleEl) {
   titleEl.addEventListener('click', (e) => {
     e.preventDefault();
     const id = titleEl.dataset.projectId;
+    if (id) { flashFade(() => openProject(id)); }
+  });
+}
+
+if (slideTapEl) {
+  slideTapEl.addEventListener('click', () => {
+    const id = slideTapEl.dataset.projectId;
     if (id) { flashFade(() => openProject(id)); }
   });
 }
