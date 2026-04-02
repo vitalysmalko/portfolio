@@ -1,41 +1,41 @@
 window.PROJECTS_MANIFEST = {
   "afisha daily": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL3.jpg",
     "Still 2024-10-09 065416_1.1.1.jpg",
     "Still 2024-10-09 065416_1.1.10.jpg",
-    "Still 2024-10-09 065416_1.1.11.jpg",
     "Still 2024-10-09 065416_1.1.12.jpg",
     "Still 2024-10-09 065416_1.1.2.jpg",
     "Still 2024-10-09 065416_1.1.4.jpg",
     "Still 2024-10-09 065416_1.1.5.jpg",
     "Still 2024-10-09 065416_1.1.6.jpg",
-    "Still 2024-10-09 065416_1.1.7.jpg",
     "Still 2024-10-09 065416_1.1.8.jpg",
     "Still 2024-10-09 065416_1.1.9.jpg"
   ],
   "chto-to ochen bezumnoe": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
     "Still 2024-10-02 050013_1.1.1.jpg",
     "Still 2024-10-02 050013_1.1.10.jpg",
     "Still 2024-10-02 050013_1.1.11.jpg",
     "Still 2024-10-02 050013_1.1.12.jpg",
     "Still 2024-10-02 050013_1.1.14.jpg",
-    "Still 2024-10-02 050013_1.1.15.jpg",
     "Still 2024-10-02 050013_1.1.17.jpg",
     "Still 2024-10-02 050013_1.1.18.jpg",
     "Still 2024-10-02 050013_1.1.3.jpg",
     "Still 2024-10-02 050013_1.1.5.jpg",
     "Still 2024-10-02 050013_1.1.6.jpg",
     "Still 2024-10-02 050013_1.1.7.jpg",
-    "Still 2024-10-02 050013_1.1.8.jpg",
     "Still 2024-10-02 050013_1.1.9.jpg"
   ],
   "ditophone - tezhe": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
     "dic_1.4.1.jpg",
     "dic_1.79.1.jpg",
-    "dic_1.79.4.jpg",
-    "dic_1.79.5.jpg",
     "dic_1.79.6.jpg",
     "dic_1.79.7.jpg",
     "dic_1.79.8.jpg",
@@ -43,8 +43,9 @@ window.PROJECTS_MANIFEST = {
   ],
   "ishodniy kod": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
     "Untitled_1.1.1.jpg",
-    "Untitled_1.10.1.jpg",
     "Untitled_1.122.1.jpg",
     "Untitled_1.123.1.jpg",
     "Untitled_1.124.1.jpg",
@@ -106,15 +107,16 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.9.1.jpg",
     "Untitled_1.94.1.jpg",
     "Untitled_1.95.2.jpg",
-    "Untitled_1.97.1.jpg",
     "Untitled_2.1.1.jpg"
   ],
   "knizhnie romantiki": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
+    "OBL3.jpg",
     "Still 2026-03-28 050350_1.1.1.jpg",
     "Still 2026-03-28 050350_1.1.10.jpg",
     "Still 2026-03-28 050350_1.1.12.jpg",
-    "Still 2026-03-28 050350_1.1.13.jpg",
     "Still 2026-03-28 050350_1.1.15.jpg",
     "Still 2026-03-28 050350_1.1.16.jpg",
     "Still 2026-03-28 050350_1.1.17.jpg",
@@ -145,12 +147,10 @@ window.PROJECTS_MANIFEST = {
     "Still 2026-03-28 050350_1.1.4.jpg",
     "Still 2026-03-28 050350_1.1.40.jpg",
     "Still 2026-03-28 050350_1.1.41.jpg",
-    "Still 2026-03-28 050350_1.1.42.jpg",
     "Still 2026-03-28 050350_1.1.43.jpg",
     "Still 2026-03-28 050350_1.1.44.jpg",
     "Still 2026-03-28 050350_1.1.45.jpg",
     "Still 2026-03-28 050350_1.1.46.jpg",
-    "Still 2026-03-28 050350_1.1.47.jpg",
     "Still 2026-03-28 050350_1.1.48.jpg",
     "Still 2026-03-28 050350_1.1.49.jpg",
     "Still 2026-03-28 050350_1.1.5.jpg",
@@ -179,23 +179,24 @@ window.PROJECTS_MANIFEST = {
   ],
   "letoile": [
     "OBL.jpg",
+    "OBL1.jpg",
     "Untitled_1.7.2.jpg",
-    "Untitled_1.7.3.jpg",
-    "Untitled_1.7.4.jpg"
+    "Untitled_1.7.3.jpg"
   ],
   "mediabasket": [],
   "menuet": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
+    "OBL3.jpg",
     "Still 2025-07-07 014808_1.1.1.jpg",
     "Still 2025-07-07 014808_1.2.1.jpg",
     "Still 2025-07-07 014808_1.2.2.jpg",
-    "Still 2025-07-07 014808_1.3.10.jpg",
     "Still 2025-07-07 014808_1.3.11.jpg",
     "Still 2025-07-07 014808_1.3.13.jpg",
     "Still 2025-07-07 014808_1.3.14.jpg",
     "Still 2025-07-07 014808_1.3.16.jpg",
     "Still 2025-07-07 014808_1.3.17.jpg",
-    "Still 2025-07-07 014808_1.3.2.jpg",
     "Still 2025-07-07 014808_1.3.20.jpg",
     "Still 2025-07-07 014808_1.3.3.jpg",
     "Still 2025-07-07 014808_1.3.4.jpg",
@@ -208,7 +209,6 @@ window.PROJECTS_MANIFEST = {
     "Still 2025-07-07 014808_1.4.4.jpg",
     "Still 2025-07-07 014808_1.4.7.jpg",
     "Still 2025-07-07 014808_1.4.9.jpg",
-    "Still 2025-07-07 014808_1.5.1.jpg",
     "Still 2025-07-07 014808_2.1.1.jpg",
     "Still 2025-07-07 014808_2.4.1.jpg",
     "Still 2025-07-07 021243_1.4.6.jpg"
@@ -230,11 +230,14 @@ window.PROJECTS_MANIFEST = {
   ],
   "ritual-prologue": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
+    "OBL3.jpg",
+    "OBL4.jpg",
+    "OBL5.jpg",
     "Still 2025-02-28 031528_1.1.1.jpg",
     "Still 2025-02-28 031528_1.1.10.jpg",
-    "Still 2025-02-28 031528_1.1.11.jpg",
     "Still 2025-02-28 031528_1.1.12.jpg",
-    "Still 2025-02-28 031528_1.1.13.jpg",
     "Still 2025-02-28 031528_1.1.14.jpg",
     "Still 2025-02-28 031528_1.1.15.jpg",
     "Still 2025-02-28 031528_1.1.17.jpg",
@@ -245,12 +248,9 @@ window.PROJECTS_MANIFEST = {
     "Still 2025-02-28 031528_1.1.21.jpg",
     "Still 2025-02-28 031528_1.1.22.jpg",
     "Still 2025-02-28 031528_1.1.23.jpg",
-    "Still 2025-02-28 031528_1.1.24.jpg",
     "Still 2025-02-28 031528_1.1.25.jpg",
     "Still 2025-02-28 031528_1.1.26.jpg",
-    "Still 2025-02-28 031528_1.1.27.jpg",
     "Still 2025-02-28 031528_1.1.28.jpg",
-    "Still 2025-02-28 031528_1.1.29.jpg",
     "Still 2025-02-28 031528_1.1.3.jpg",
     "Still 2025-02-28 031528_1.1.30.jpg",
     "Still 2025-02-28 031528_1.1.4.jpg",
@@ -266,11 +266,9 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.12.1.jpg",
     "Untitled_1.14.1.jpg",
     "Untitled_1.15.1.jpg",
-    "Untitled_1.17.1.jpg",
     "Untitled_1.17.2.jpg",
     "Untitled_1.2.1.jpg",
     "Untitled_1.20.1.jpg",
-    "Untitled_1.28.1.jpg",
     "Untitled_1.35.1.jpg",
     "Untitled_1.36.1.jpg",
     "Untitled_1.38.1.jpg",
@@ -283,7 +281,6 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.54.1.jpg",
     "Untitled_1.55.1.jpg",
     "Untitled_1.59.1.jpg",
-    "Untitled_1.60.1.jpg",
     "Untitled_1.61.1.jpg",
     "Untitled_1.8.1.jpg",
     "Untitled_2.10.1.jpg",
@@ -296,31 +293,28 @@ window.PROJECTS_MANIFEST = {
   ],
   "terelya - otpusti": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
+    "OBL3.jpg",
+    "OBL4.jpg",
     "Untitled_1.135.1.jpg",
     "Untitled_1.135.10.jpg",
     "Untitled_1.135.11.jpg",
     "Untitled_1.135.12.jpg",
-    "Untitled_1.135.13.jpg",
     "Untitled_1.135.14.jpg",
     "Untitled_1.135.15.jpg",
     "Untitled_1.135.16.jpg",
     "Untitled_1.135.17.jpg",
     "Untitled_1.135.18.jpg",
     "Untitled_1.135.19.jpg",
-    "Untitled_1.135.2.jpg",
     "Untitled_1.135.20.jpg",
     "Untitled_1.135.21.jpg",
-    "Untitled_1.135.22.jpg",
     "Untitled_1.135.23.jpg",
-    "Untitled_1.135.24.jpg",
     "Untitled_1.135.25.jpg",
     "Untitled_1.135.3.jpg",
-    "Untitled_1.135.4.jpg",
     "Untitled_1.135.5.jpg",
     "Untitled_1.135.6.jpg",
     "Untitled_1.135.7.jpg",
-    "Untitled_1.135.8.jpg",
-    "Untitled_1.135.9.jpg",
     "Untitled_1.136.1.jpg",
     "Untitled_1.137.10.jpg",
     "Untitled_1.137.11.jpg",
@@ -330,21 +324,17 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.137.15.jpg",
     "Untitled_1.137.16.jpg",
     "Untitled_1.137.17.jpg",
-    "Untitled_1.137.18.jpg",
     "Untitled_1.137.19.jpg",
     "Untitled_1.137.2.jpg",
     "Untitled_1.137.20.jpg",
     "Untitled_1.137.22.jpg",
-    "Untitled_1.137.23.jpg",
     "Untitled_1.137.24.jpg",
     "Untitled_1.137.3.jpg",
     "Untitled_1.137.4.jpg",
-    "Untitled_1.137.5.jpg",
     "Untitled_1.137.6.jpg",
     "Untitled_1.137.7.jpg",
     "Untitled_1.137.8.jpg",
-    "Untitled_1.137.9.jpg",
-    "Untitled_1.8.1.jpg"
+    "Untitled_1.137.9.jpg"
   ],
   "trymerry": [
     "OBL.jpg",
@@ -448,41 +438,73 @@ window.PROJECTS_MANIFEST = {
   ],
   "yuzhniy sever - zemlya": [
     "OBL.jpg",
+    "OBL1.jpg",
+    "OBL2.jpg",
     "Still 2024-10-09 020630_1.1.1.jpg",
     "Still 2024-10-09 020630_1.1.2.jpg",
     "Still 2024-10-09 020630_1.1.3.jpg",
-    "Still 2024-10-09 020630_1.1.4.jpg",
-    "Still 2024-10-09 020630_1.1.5.jpg",
     "Still 2024-10-09 020630_1.1.7.jpg"
   ]
 };
 window.SLIDES_MANIFEST = [
   {
-    "src": "projects/afisha daily/OBL.jpg",
+    "src": "projects/afisha daily/OBL1.jpg",
     "project": "afisha daily"
   },
   {
-    "src": "projects/chto-to ochen bezumnoe/OBL.jpg",
+    "src": "projects/afisha daily/OBL3.jpg",
+    "project": "afisha daily"
+  },
+  {
+    "src": "projects/chto-to ochen bezumnoe/OBL1.jpg",
     "project": "chto-to ochen bezumnoe"
   },
   {
-    "src": "projects/ditophone - tezhe/OBL.jpg",
+    "src": "projects/chto-to ochen bezumnoe/OBL2.jpg",
+    "project": "chto-to ochen bezumnoe"
+  },
+  {
+    "src": "projects/ditophone - tezhe/OBL1.jpg",
     "project": "ditophone - tezhe"
   },
   {
-    "src": "projects/ishodniy kod/OBL.jpg",
+    "src": "projects/ditophone - tezhe/OBL2.jpg",
+    "project": "ditophone - tezhe"
+  },
+  {
+    "src": "projects/ishodniy kod/OBL1.jpg",
     "project": "ishodniy kod"
   },
   {
-    "src": "projects/knizhnie romantiki/OBL.jpg",
+    "src": "projects/ishodniy kod/OBL2.jpg",
+    "project": "ishodniy kod"
+  },
+  {
+    "src": "projects/knizhnie romantiki/OBL1.jpg",
     "project": "knizhnie romantiki"
   },
   {
-    "src": "projects/letoile/OBL.jpg",
+    "src": "projects/knizhnie romantiki/OBL2.jpg",
+    "project": "knizhnie romantiki"
+  },
+  {
+    "src": "projects/knizhnie romantiki/OBL3.jpg",
+    "project": "knizhnie romantiki"
+  },
+  {
+    "src": "projects/letoile/OBL1.jpg",
     "project": "letoile"
   },
   {
-    "src": "projects/menuet/OBL.jpg",
+    "src": "projects/menuet/OBL1.jpg",
+    "project": "menuet"
+  },
+  {
+    "src": "projects/menuet/OBL2.jpg",
+    "project": "menuet"
+  },
+  {
+    "src": "projects/menuet/OBL3.jpg",
     "project": "menuet"
   },
   {
@@ -490,7 +512,23 @@ window.SLIDES_MANIFEST = [
     "project": "ohota"
   },
   {
-    "src": "projects/ritual-prologue/OBL.jpg",
+    "src": "projects/ritual-prologue/OBL1.jpg",
+    "project": "ritual-prologue"
+  },
+  {
+    "src": "projects/ritual-prologue/OBL2.jpg",
+    "project": "ritual-prologue"
+  },
+  {
+    "src": "projects/ritual-prologue/OBL3.jpg",
+    "project": "ritual-prologue"
+  },
+  {
+    "src": "projects/ritual-prologue/OBL4.jpg",
+    "project": "ritual-prologue"
+  },
+  {
+    "src": "projects/ritual-prologue/OBL5.jpg",
     "project": "ritual-prologue"
   },
   {
@@ -498,7 +536,19 @@ window.SLIDES_MANIFEST = [
     "project": "siberia"
   },
   {
-    "src": "projects/terelya - otpusti/OBL.jpg",
+    "src": "projects/terelya - otpusti/OBL1.jpg",
+    "project": "terelya - otpusti"
+  },
+  {
+    "src": "projects/terelya - otpusti/OBL2.jpg",
+    "project": "terelya - otpusti"
+  },
+  {
+    "src": "projects/terelya - otpusti/OBL3.jpg",
+    "project": "terelya - otpusti"
+  },
+  {
+    "src": "projects/terelya - otpusti/OBL4.jpg",
     "project": "terelya - otpusti"
   },
   {
@@ -518,7 +568,11 @@ window.SLIDES_MANIFEST = [
     "project": "ya bolshe tak ne budu"
   },
   {
-    "src": "projects/yuzhniy sever - zemlya/OBL.jpg",
+    "src": "projects/yuzhniy sever - zemlya/OBL1.jpg",
+    "project": "yuzhniy sever - zemlya"
+  },
+  {
+    "src": "projects/yuzhniy sever - zemlya/OBL2.jpg",
     "project": "yuzhniy sever - zemlya"
   }
 ];
