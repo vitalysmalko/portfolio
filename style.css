@@ -1128,8 +1128,8 @@ body.is-home .site-footer {
     left: 14px;
     right: auto;
     align-items: flex-start;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 18px;
     z-index: 2;
   }
   body.is-home #slide-title-el::after { display: none; }
