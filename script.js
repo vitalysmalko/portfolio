@@ -294,64 +294,107 @@ const PROJECTS = [
 
 
 // ═══════════════════════════════════════════════════════════════
-//  SLIDESHOW
+//  SLIDESHOW  (2-div crossfade — загружаем по одному кадру)
 // ═══════════════════════════════════════════════════════════════
 const slideshowEl = document.getElementById('slideshow');
 const titleEl     = document.getElementById('slide-title-el');
 const slideTapEl  = document.getElementById('slide-tap');
-const scCur       = document.getElementById('sc-cur');
-const scTot       = document.getElementById('sc-tot');
 
-let slides     = [];
 let slideIdx   = 0;
 let slideTimer = null;
 const DELAY    = 4500;
 
-function pad(n) { return String(n + 1).padStart(2, '0'); }
-
-function addSlide(src) {
-  const el = document.createElement('div');
-  el.className = 'slide';
-  el.style.backgroundImage = `url('${src}')`;
-  slideshowEl.appendChild(el);
-  slides.push(el);
-}
-
-function initSlideshow() {
-  if (!slides.length) return;
-  goSlide(0);
-  startAuto();
-
-  // Swipe on mobile
-  let tx = 0;
-  slideshowEl.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
-  slideshowEl.addEventListener('touchend',   e => {
-    const d = e.changedTouches[0].clientX - tx;
-    if (Math.abs(d) > 40) { goSlide(slideIdx + (d < 0 ? 1 : -1)); startAuto(); }
-  }, { passive: true });
-}
-
-function goSlide(n) {
-  if (!slides.length) return;
-  slides[slideIdx].classList.remove('active');
-  // Новый круг — ресаффл
-  if (n >= slides.length) {
-    _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
-    _slides.forEach((s, i) => { slides[i].style.backgroundImage = `url('${s.src}')`; });
-    n = 0;
+// Перемешиваем слайды так, чтобы один проект не шёл дважды подряд
+function shuffleNoConsec(list) {
+  const groups = {};
+  list.forEach(s => {
+    if (!groups[s.project]) groups[s.project] = [];
+    groups[s.project].push(s);
+  });
+  Object.values(groups).forEach(arr => arr.sort(() => Math.random() - 0.5));
+  const result = [];
+  const keys = Object.keys(groups);
+  while (result.length < list.length) {
+    const last = result.length ? result[result.length - 1].project : null;
+    const avail = keys.filter(k => groups[k].length > 0 && k !== last);
+    const pool = avail.length ? avail : keys.filter(k => groups[k].length > 0);
+    if (!pool.length) break;
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    result.push(groups[pick].pop());
   }
-  slideIdx = ((n % slides.length) + slides.length) % slides.length;
-  slides[slideIdx].classList.add('active');
-  const projectId = _slides[slideIdx]?.project;
+  return result;
+}
+
+let _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
+
+// Только 2 дива вместо N — картинки грузятся по одной
+const _divA = document.createElement('div');
+const _divB = document.createElement('div');
+_divA.className = 'slide';
+_divB.className = 'slide';
+slideshowEl.appendChild(_divA);
+slideshowEl.appendChild(_divB);
+let _curDiv = _divA;
+let _nxtDiv = _divB;
+
+function _setSlideTitle(projectId) {
   const proj = PROJECTS.find(p => p.id === projectId);
   if (titleEl) {
     titleEl.textContent = proj ? proj.title : (projectId || '');
     titleEl.dataset.projectId = projectId || '';
     titleEl.href = proj ? `/${proj.category}/${slugify(proj.id)}` : '#';
   }
-  if (slideTapEl) {
-    slideTapEl.dataset.projectId = projectId || '';
+  if (slideTapEl) slideTapEl.dataset.projectId = projectId || '';
+}
+
+function goSlide(n) {
+  if (!_slides.length) return;
+  // Новый круг — ресаффл
+  if (n >= _slides.length) {
+    _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
+    n = 0;
   }
+  slideIdx = ((n % _slides.length) + _slides.length) % _slides.length;
+  const slide = _slides[slideIdx];
+
+  // Грузим следующий кадр в неактивный div, затем кроссфейд
+  _nxtDiv.style.backgroundImage = `url('${slide.src}')`;
+  _nxtDiv.classList.add('active');
+  _curDiv.classList.remove('active');
+  [_curDiv, _nxtDiv] = [_nxtDiv, _curDiv];
+
+  _setSlideTitle(slide.project);
+
+  // Предзагрузка следующего кадра пока показывается текущий
+  const nextIdx = (slideIdx + 1) % _slides.length;
+  new Image().src = _slides[nextIdx].src;
+}
+
+function initSlideshow() {
+  if (!_slides.length) return;
+
+  // Первый кадр — сразу без лишних запросов
+  _curDiv.style.backgroundImage = `url('${_slides[0].src}')`;
+  _curDiv.classList.add('active');
+  _setSlideTitle(_slides[0].project);
+
+  // Предзагрузка второго кадра
+  if (_slides.length > 1) new Image().src = _slides[1].src;
+
+  startAuto();
+
+  // Свайп на мобиле
+  let tx = 0;
+  slideshowEl.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  slideshowEl.addEventListener('touchend', e => {
+    const d = e.changedTouches[0].clientX - tx;
+    if (Math.abs(d) > 40) { goSlide(slideIdx + (d < 0 ? 1 : -1)); startAuto(); }
+  }, { passive: true });
+}
+
+function startAuto() {
+  clearInterval(slideTimer);
+  slideTimer = setInterval(() => goSlide(slideIdx + 1), DELAY);
 }
 
 if (titleEl) {
@@ -369,35 +412,6 @@ if (slideTapEl) {
   });
 }
 
-function startAuto() {
-  clearInterval(slideTimer);
-  slideTimer = setInterval(() => goSlide(slideIdx + 1), DELAY);
-}
-
-// Перемешиваем слайды так, чтобы один проект не шёл дважды подряд
-function shuffleNoConsec(slides) {
-  const groups = {};
-  slides.forEach(s => {
-    if (!groups[s.project]) groups[s.project] = [];
-    groups[s.project].push(s);
-  });
-  Object.values(groups).forEach(arr => arr.sort(() => Math.random() - 0.5));
-
-  const result = [];
-  const keys = Object.keys(groups);
-  while (result.length < slides.length) {
-    const last = result.length ? result[result.length - 1].project : null;
-    const avail = keys.filter(k => groups[k].length > 0 && k !== last);
-    const pool = avail.length ? avail : keys.filter(k => groups[k].length > 0);
-    if (!pool.length) break;
-    const pick = pool[Math.floor(Math.random() * pool.length)];
-    result.push(groups[pick].pop());
-  }
-  return result;
-}
-
-let _slides = shuffleNoConsec(window.SLIDES_MANIFEST || []);
-_slides.forEach(s => addSlide(s.src));
 initSlideshow();
 
 
