@@ -231,7 +231,6 @@ window.PROJECTS_MANIFEST = {
   "pogoda na tnt": [
     "OBL.webp",
     "Still 2026-06-26 134522_1.1.1.webp",
-    "Still 2026-06-26 134522_1.1.2.webp",
     "Still 2026-06-26 134522_1.1.3.webp",
     "Still 2026-06-26 134522_1.1.4.webp",
     "Still 2026-06-26 134522_1.2.2.webp",
