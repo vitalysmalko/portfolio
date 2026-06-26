@@ -179,9 +179,9 @@ window.PROJECTS_MANIFEST = {
   ],
   "letoile": [
     "OBL.webp",
-    "OBL1.webp",
     "Untitled_1.7.2.webp",
-    "Untitled_1.7.3.webp"
+    "Untitled_1.7.3.webp",
+    "still-1.webp"
   ],
   "mediabasket": [],
   "menuet": [
@@ -504,7 +504,7 @@ window.SLIDES_MANIFEST = [
     "project": "knizhnie romantiki"
   },
   {
-    "src": "projects/letoile/OBL1.webp",
+    "src": "projects/letoile/OBL.webp",
     "project": "letoile"
   },
   {
