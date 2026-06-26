@@ -166,6 +166,21 @@ const PROJECTS = [
     linkLabel: 'WATCH',
   },
 
+  {
+    id: 'pogoda na tnt',
+    category: 'commercial',
+    title: 'POGODA NA TNT',
+    subtitle: 'Commercial',
+    desc: 'Weather TV Show Every day On TNT.',
+    stills: [],
+    meta: [
+      { label: 'TYPE',    value: 'TV SHOW' },
+      { label: 'CHANNEL', value: 'TNT' },
+    ],
+    link: '',
+    linkLabel: 'WATCH',
+  },
+
 
   // ── MUSIC VIDEO ─────────────────────────────────────────────
   {

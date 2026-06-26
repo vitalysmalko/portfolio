@@ -228,6 +228,19 @@ window.PROJECTS_MANIFEST = {
     "Still 2026-04-02 152312_1.1.8.webp",
     "Still 2026-04-02 152312_1.1.9.webp"
   ],
+  "pogoda na tnt": [
+    "OBL.webp",
+    "Still 2026-06-26 134522_1.1.1.webp",
+    "Still 2026-06-26 134522_1.1.2.webp",
+    "Still 2026-06-26 134522_1.1.3.webp",
+    "Still 2026-06-26 134522_1.1.4.webp",
+    "Still 2026-06-26 134522_1.2.2.webp",
+    "Still 2026-06-26 134522_1.2.3.webp",
+    "Still 2026-06-26 134522_1.2.4.webp",
+    "Still 2026-06-26 134522_1.2.5.webp",
+    "Still 2026-06-26 134522_1.2.6.webp",
+    "Still 2026-06-26 134522_1.2.7.webp"
+  ],
   "ritual-prologue": [
     "OBL.webp",
     "OBL1.webp",
@@ -510,6 +523,10 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/ohota/OBL.webp",
     "project": "ohota"
+  },
+  {
+    "src": "projects/pogoda na tnt/OBL.webp",
+    "project": "pogoda na tnt"
   },
   {
     "src": "projects/ritual-prologue/OBL1.webp",
