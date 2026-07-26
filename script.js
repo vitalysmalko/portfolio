@@ -20,8 +20,10 @@ const PROJECTS = [
     id: 'ritual-prologue',
     category: 'film',
     title: 'RITUAL. PROLOGUE',
+    titleRu: 'РИТУАЛ. ПРОЛОГ',
     subtitle: 'Short Film · Dir. Vladimir Repin',
     desc: 'This film is part of a large story. It\'s a gothic epic, dedicated to the release of White Punk album «Vampire: Chapter Two»',
+    descRu: 'Этот фильм — часть большой истории. Готический эпик, посвящённый выходу альбома White Punk «Vampire: Chapter Two»',
     stills: [
       // 'stills/ritual-1.jpg',
       // 'stills/ritual-2.jpg',
@@ -39,8 +41,10 @@ const PROJECTS = [
     id: 'knizhnie romantiki',
     category: 'film',
     title: 'KNIZHNIE ROMANTIKI',
+    titleRu: 'КНИЖНЫЕ РОМАНТИКИ',
     subtitle: 'Short Film · Dir. Nikolay Chernobayev',
     desc: 'A romantic story from Saint Petersburg. Best Cinematography at the Most. Goryzonty film festival.',
+    descRu: 'Романтическая история из Санкт-Петербурга. Лучшая операторская работа фестиваля Most. Goryzonty.',
     stills: [],
     meta: [
       { label: 'YEAR',      value: '2025' },
@@ -56,6 +60,7 @@ const PROJECTS = [
     id: 'menuet',
     category: 'film',
     title: 'MENUET',
+    titleRu: 'МЕНУЭТ',
     subtitle: 'Short Film · Dir. Diana Dargaeva',
     desc: '',
     stills: [],
@@ -71,8 +76,10 @@ const PROJECTS = [
     id: 'nichya',
     category: 'film',
     title: 'NICHYA',
+    titleRu: 'НИЧЬЯ',
     subtitle: 'Short Film · Dir. Diana Dargaeva',
     desc: 'A slice-of-life drama about a girl nobody cares about.',
+    descRu: 'Бытовая драма о девочке, о которой никто не заботится.',
     stills: [],
     meta: [
       { label: 'YEAR',      value: '2026' },
@@ -86,6 +93,7 @@ const PROJECTS = [
     id: 'ya bolshe tak ne budu',
     category: 'film',
     title: 'YA BOLSHE TAK NE BUDU',
+    titleRu: 'Я БОЛЬШЕ ТАК НЕ БУДУ',
     subtitle: 'Short Film · Dir. Sergey Voitkevich',
     desc: '',
     stills: [],
@@ -101,6 +109,7 @@ const PROJECTS = [
     id: 'ishodniy kod',
     category: 'film',
     title: 'ISHODNIY KOD',
+    titleRu: 'ИСХОДНЫЙ КОД',
     subtitle: 'Documentary · Dir. Grigory Sazanov',
     desc: '',
     stills: [],
@@ -117,6 +126,7 @@ const PROJECTS = [
     id: 'chto-to ochen bezumnoe',
     category: 'film',
     title: 'CHTO-TO OCHEN BEZUMNOE',
+    titleRu: 'ЧТО-ТО ОЧЕНЬ БЕЗУМНОЕ',
     subtitle: 'Short Film · Dir. Marina Aznaurova',
     desc: '',
     stills: [],
@@ -148,8 +158,10 @@ const PROJECTS = [
     id: 'pogoda na tnt',
     category: 'commercial',
     title: 'POGODA NA TNT',
+    titleRu: 'ПОГОДА НА ТНТ',
     subtitle: 'Commercial',
     desc: 'Weather TV Show Every day On TNT.',
+    descRu: 'Ежедневное шоу о погоде на ТНТ.',
     stills: [],
     meta: [
       { label: 'TYPE',    value: 'TV SHOW' },
@@ -205,6 +217,7 @@ const PROJECTS = [
     title: 'SIBERIA',
     subtitle: 'Commercial',
     desc: 'One-shot advertisement for an elite spa complex.',
+    descRu: 'Однокадровая реклама элитного спа-комплекса.',
     stills: [],
     meta: [
     ],
@@ -218,8 +231,10 @@ const PROJECTS = [
     id: 'slaughter to prevail',
     category: 'music-video',
     title: 'KOSCHEI',
+    titleRu: 'КОЩЕЙ',
     subtitle: 'Slaughter To Prevail · Dir. Vladimir Repin',
     desc: 'My second major work with the AVE Warriors team.',
+    descRu: 'Моя вторая большая работа с командой AVE Warriors.',
     stills: [],
     meta: [
       { label: 'YEAR',      value: '2026' },
@@ -233,6 +248,7 @@ const PROJECTS = [
     id: 'ditophone - tezhe',
     category: 'music-video',
     title: 'TEZHE',
+    titleRu: 'ТЭ ЖЭ',
     subtitle: 'Ditophone',
     desc: '',
     stills: [],
@@ -247,6 +263,7 @@ const PROJECTS = [
     id: 'terelya - otpusti',
     category: 'music-video',
     title: 'OTPUSTI',
+    titleRu: 'ОТПУСТИ',
     subtitle: 'Terelya · Dir. Grigory Sazanov',
     desc: '',
     stills: [],
@@ -262,8 +279,10 @@ const PROJECTS = [
     id: 'vodopady - eto bil son',
     category: 'music-video',
     title: 'ETO BYL SON',
+    titleRu: 'ЭТО БЫЛ СОН',
     subtitle: 'VDPDY · Dir. Ilya Polyakov',
     desc: 'Summer, love, handheld camera.',
+    descRu: 'Лето, любовь, ручная камера.',
     stills: [],
     meta: [
       { label: 'YEAR',      value: '2024' },
@@ -279,6 +298,7 @@ const PROJECTS = [
     title: 'THE FEARFUL WORLD WE CREATED',
     subtitle: 'Music Video',
     desc: 'Shot on iPhone 13',
+    descRu: 'Снято на iPhone 13',
     stills: [],
     meta: [
       { label: 'YEAR', value: '2025' },
@@ -291,6 +311,7 @@ const PROJECTS = [
     id: 'yuzhniy sever - zemlya',
     category: 'music-video',
     title: 'ZEMLYA',
+    titleRu: 'ЗЕМЛЯ',
     subtitle: 'Yuzhniy Sever',
     desc: '',
     meta: [
@@ -304,6 +325,7 @@ const PROJECTS = [
     id: 'voda',
     category: 'music-video',
     title: 'VODA',
+    titleRu: 'ВОДА',
     subtitle: 'Yuzhniy Sever',
     desc: '',
     meta: [
@@ -317,6 +339,7 @@ const PROJECTS = [
     id: 'vmesto',
     category: 'music-video',
     title: 'VMESTO',
+    titleRu: 'ВМЕСТО',
     subtitle: 'OG Prince',
     desc: '',
     meta: [
@@ -352,6 +375,143 @@ const PROJECTS = [
   //   linkLabel: 'WATCH',
   // },
 ];
+
+
+// ═══════════════════════════════════════════════════════════════
+//  I18N — EN / RU переключатель
+// ═══════════════════════════════════════════════════════════════
+const I18N = {
+  en: {
+    'brand.name':        'Vitaly Smalko',
+    'title.tag':         'Vitaly Smalko — Director of Photography',
+    'nav.film':          'FILM',
+    'nav.commercial':    'COMMERCIAL',
+    'nav.music-video':   'MUSIC VIDEO',
+    'nav.about':         'ABOUT',
+    'nav.contact':       'CONTACT',
+    'role':              'DIRECTOR OF PHOTOGRAPHY',
+    'about.bio':         'Born on April 4, 1997, in Moscow, Vitaly Smalko is a Director of Photography working across Music Videos and Feature Films. A graduate of the Moscow Film School, he brings extensive experience on large-scale productions and shoots on any camera system on the planet, with a particular love for one-shot productions. His short films have screened at festivals, winning an award for Best Cinematography.',
+    'contact.note':      'MOSCOW — AVAILABLE FOR TRAVEL',
+    'footer.mail':       'MAIL',
+    'empty':             'COMING SOON',
+    'watch.vimeo':       'WATCH ON VIMEO',
+    'watch.youtube':     'WATCH ON YOUTUBE',
+    'open.link':         'OPEN LINK',
+    'back':              'BACK',
+    'sub.video':         'VIDEO',
+    'sub.screenshots':   'SCREENSHOTS',
+    'sub.credits':       'CREDITS',
+  },
+  ru: {
+    'brand.name':        'Виталий Смалько',
+    'title.tag':         'Виталий Смалько — Оператор-постановщик',
+    'nav.film':          'ФИЛЬМЫ',
+    'nav.commercial':    'РЕКЛАМА',
+    'nav.music-video':   'КЛИПЫ',
+    'nav.about':         'ОБО МНЕ',
+    'nav.contact':       'КОНТАКТЫ',
+    'role':              'ОПЕРАТОР-ПОСТАНОВЩИК',
+    'about.bio':         'Виталий Смалько родился 4 апреля 1997 года в Москве. Оператор-постановщик, работает в клипах и полнометражном кино. Окончил Московскую школу кино, обладает большим опытом работы на крупных производственных площадках и снимает на любую камеру на планете — особенно любит однокадровые постановки. Его короткометражные фильмы показывались на фестивалях, а на одном из них он получил приз за лучшую операторскую работу.',
+    'contact.note':      'МОСКВА — ГОТОВ К КОМАНДИРОВКАМ',
+    'footer.mail':       'ПОЧТА',
+    'empty':             'СКОРО',
+    'watch.vimeo':       'СМОТРЕТЬ НА VIMEO',
+    'watch.youtube':     'СМОТРЕТЬ НА YOUTUBE',
+    'open.link':         'ОТКРЫТЬ ССЫЛКУ',
+    'back':              'НАЗАД',
+    'sub.video':         'ВИДЕО',
+    'sub.screenshots':   'КАДРЫ',
+    'sub.credits':       'О ПРОЕКТЕ',
+  },
+};
+
+// Переводы для мета-полей на карточках проектов (ярлык переводится всегда,
+// значение — только если это обычное описательное слово, не имя собственное:
+// имена режиссёров/артистов, названия фестивалей/каналов остаются как есть)
+const META_LABEL_RU = {
+  YEAR: 'ГОД', DIRECTOR: 'РЕЖИССЁР', LOCATION: 'ЛОКАЦИЯ', AWARD: 'НАГРАДА',
+  FESTIVALS: 'ФЕСТИВАЛИ', TYPE: 'ТИП', CHANNEL: 'КАНАЛ', ARTIST: 'АРТИСТ',
+};
+
+const META_VALUE_RU = {
+  'SAINT PETERSBURG': 'САНКТ-ПЕТЕРБУРГ',
+  'DOCUMENTARY': 'ДОКУМЕНТАЛЬНЫЙ',
+  'TV SHOW': 'ТВ-ШОУ',
+  'FASHION': 'МОДА',
+  'PROMO': 'ПРОМО',
+  'BEST CINEMATOGRAPHY — MOST. GORYZONTY': 'ЛУЧШАЯ ОПЕРАТОРСКАЯ РАБОТА — MOST. GORYZONTY',
+};
+
+// linkLabel на карточках — WATCH/TRAILER/KINOPOISK и т.п.
+const LINK_LABEL_RU = { WATCH: 'СМОТРЕТЬ', TRAILER: 'ТРЕЙЛЕР', KINOPOISK: 'КИНОПОИСК' };
+
+// Подпись под названием проекта: "Short Film · Dir. NAME" и т.п. — переводим
+// служебные слова (тип + "Dir.") и имена режиссёров. Названия групп/сценические
+// имена НЕ трогаем — это их бренд (Ditophone, OG Prince, Slaughter To Prevail
+// и т.п. пишутся одинаково в обеих версиях, подтверждено 26.07).
+const TYPE_WORDS_RU = {
+  'Fashion Brand Commercial': 'Реклама бренда одежды',
+  'Short Film':               'Короткий метр',
+  'Documentary':               'Документальный фильм',
+  'Commercial':                'Реклама',
+  'Music Video':                'Клип',
+};
+
+// Имена режиссёров и часть артистов — переводим в кириллицу (написания даны
+// Виталиком 26.07). Сценические имена, которые он попросил НЕ трогать
+// (OG Prince, Slaughter To Prevail, VDPDY), в словаре намеренно отсутствуют —
+// остаются как есть в обеих версиях.
+const NAME_RU = {
+  'Vladimir Repin':       'Владимир Репин',
+  'Nikolay Chernobayev':  'Николай Чернобаев',
+  'Diana Dargaeva':       'Диана Даргаева',
+  'Sergey Voitkevich':    'Сергей Войткевич',
+  'Grigory Sazanov':      'Григорий Сазанов',
+  'Marina Aznaurova':     'Марина Азнаурова',
+  'Ilya Polyakov':        'Илья Поляков',
+  'Ditophone':            'Диктофон',
+  'Terelya':              'Тереля',
+  'Yuzhniy Sever':        'Южный Север',
+};
+
+let currentLang = localStorage.getItem('lang') === 'ru' ? 'ru' : 'en';
+
+function t(key) {
+  return (I18N[currentLang] && I18N[currentLang][key]) ?? I18N.en[key] ?? key;
+}
+
+function trMetaLabel(label) {
+  return currentLang === 'ru' ? (META_LABEL_RU[label] || label) : label;
+}
+
+function trMetaValue(value) {
+  return currentLang === 'ru' ? (META_VALUE_RU[value] || value) : value;
+}
+
+function trLinkLabel(label) {
+  return currentLang === 'ru' ? (LINK_LABEL_RU[label] || label) : label;
+}
+
+function trSubtitle(subtitle) {
+  if (currentLang !== 'ru' || !subtitle) return subtitle;
+  let s = subtitle;
+  for (const [en, ru] of Object.entries(TYPE_WORDS_RU)) {
+    if (s.startsWith(en)) { s = ru + s.slice(en.length); break; }
+  }
+  s = s.replace(/Dir\./, 'Реж.');
+  for (const [en, ru] of Object.entries(NAME_RU)) {
+    s = s.split(en).join(ru); // split/join — без экранирования regex-спецсимволов
+  }
+  return s;
+}
+
+function trTitle(p) {
+  return currentLang === 'ru' ? (p.titleRu || p.title) : p.title;
+}
+
+function trDesc(p) {
+  return currentLang === 'ru' ? (p.descRu || p.desc) : p.desc;
+}
 
 
 // ═══════════════════════════════════════════════════════════════
@@ -401,7 +561,7 @@ let _nxtDiv = _divB;
 function _setSlideTitle(projectId) {
   const proj = PROJECTS.find(p => p.id === projectId);
   if (titleEl) {
-    titleEl.textContent = proj ? proj.title : (projectId || '');
+    titleEl.textContent = proj ? trTitle(proj) : (projectId || '');
     titleEl.dataset.projectId = projectId || '';
     titleEl.href = proj ? `/${proj.category}/${slugify(proj.id)}` : '#';
   }
@@ -496,6 +656,7 @@ const builtSet = new Set();
 const catNames = { film:'FILM', commercial:'COMMERCIAL', 'music-video':'MUSIC VIDEO', 'brand-content':'BRAND CONTENT' };
 
 let prevCat = null; // запоминаем откуда пришли
+let currentPage = 'home'; // для перерисовки текста при смене языка
 
 function slugify(s) {
   return s.toLowerCase()
@@ -505,6 +666,7 @@ function slugify(s) {
 }
 
 function navigate(page, fromCat, { push = true } = {}) {
+  currentPage = page;
   if (push && page !== 'project') {
     const url = page === 'home' ? '/' : `/${page}`;
     history.pushState({ page, fromCat }, '', url);
@@ -520,7 +682,7 @@ function navigate(page, fromCat, { push = true } = {}) {
     pageEls.project.classList.add('active');
   } else {
     document.body.className = 'is-page';
-    if (mobPageTitle) mobPageTitle.textContent = catNames[page] || '';
+    if (mobPageTitle) mobPageTitle.textContent = catNames[page] ? t('nav.' + page) : '';
     const target = pageEls[page];
     if (target) {
       target.classList.add('active');
@@ -588,7 +750,7 @@ function buildCatPage(cat, container) {
   const isReels = cat === 'reels';
 
   if (items.length === 0) {
-    container.innerHTML = `<div class="empty">COMING SOON</div>`;
+    container.innerHTML = `<div class="empty">${t('empty')}</div>`;
     return;
   }
 
@@ -599,20 +761,21 @@ function buildCatPage(cat, container) {
 
   items.forEach(p => {
     const cover = getCover(p.id);
+    const title = trTitle(p);
     if (isReels) {
       html += `<div class="${cardClass}" data-id="${p.id}" data-cat="${cat}">`;
       html += cover
-        ? `<img class="rcard-img" src="${cover}" alt="${p.title}" loading="lazy">`
+        ? `<img class="rcard-img" src="${cover}" alt="${title}" loading="lazy">`
         : `<div class="rcard-img" style="aspect-ratio:9/16;background:#0c0c0c"></div>`;
-      html += `<div class="rcard-over"><span class="pcard-title">${p.title}</span></div></div>`;
+      html += `<div class="rcard-over"><span class="pcard-title">${title}</span></div></div>`;
     } else {
       html += `<div class="${cardClass}" data-id="${p.id}" data-cat="${cat}">`;
       html += cover
-        ? `<img class="pcard-img" src="${cover}" alt="${p.title}" loading="lazy">`
+        ? `<img class="pcard-img" src="${cover}" alt="${title}" loading="lazy">`
         : `<div class="pcard-ph"></div>`;
       html += `<div class="pcard-info">
-        <div class="pcard-title">${p.title}</div>
-        <div class="pcard-sub">${p.subtitle}</div>
+        <div class="pcard-title">${title}</div>
+        <div class="pcard-sub">${trSubtitle(p.subtitle)}</div>
       </div></div>`;
     }
   });
@@ -638,7 +801,7 @@ function buildAboutPage() {
   const imgs = getProjectImages('about');
   if (imgs.length === 0) return; // фото ещё не добавлены — просто пусто
   container.innerHTML = imgs
-    .map(src => `<img class="about-photo" src="${src}" alt="Vitaly Smalko" loading="lazy">`)
+    .map(src => `<img class="about-photo" src="${src}" alt="${t('brand.name')}" loading="lazy">`)
     .join('');
 }
 
@@ -646,9 +809,13 @@ function buildAboutPage() {
 // ═══════════════════════════════════════════════════════════════
 //  PROJECT PAGE
 // ═══════════════════════════════════════════════════════════════
+let currentProjectId = null; // для перерисовки открытой карточки при смене языка
+
 function openProject(id, { push = true } = {}) {
   const p = PROJECTS.find(x => x.id === id);
   if (!p) return;
+  currentProjectId = id;
+  const title = trTitle(p);
 
   const imgs    = getGalleryImages(id);
   const cat     = catNames[p.category] || p.category;
@@ -660,9 +827,9 @@ function openProject(id, { push = true } = {}) {
 
   // Субнав
   const subnav = [
-    hasVideo               ? { label: 'VIDEO',       anchor: 'sec-video' }       : null,
-    imgs.length            ? { label: 'SCREENSHOTS', anchor: 'sec-screenshots' } : null,
-    (p.desc||p.meta?.length) ? { label: 'CREDITS',  anchor: 'sec-credits' }      : null,
+    hasVideo               ? { label: t('sub.video'),       anchor: 'sec-video' }       : null,
+    imgs.length            ? { label: t('sub.screenshots'), anchor: 'sec-screenshots' } : null,
+    (p.desc||p.meta?.length) ? { label: t('sub.credits'),  anchor: 'sec-credits' }      : null,
   ].filter(Boolean);
 
   // Видео — превью с кнопкой (работает даже если embed отключён)
@@ -670,11 +837,11 @@ function openProject(id, { push = true } = {}) {
   const isExternal = p.link && !p.link.includes('youtube') && !p.link.includes('vimeo');
   const ytId = embedUrl && !isVimeo ? embedUrl.split('/embed/')[1]?.split('?')[0] : null;
   const thumbUrl = ytId ? `https://img.youtube.com/vi/${ytId}/maxresdefault.jpg` : getCover(id);
-  const watchLabel = isVimeo ? 'WATCH ON VIMEO' : isExternal ? (p.linkLabel || 'OPEN LINK') : 'WATCH ON YOUTUBE';
+  const watchLabel = isVimeo ? t('watch.vimeo') : isExternal ? (trLinkLabel(p.linkLabel) || t('open.link')) : t('watch.youtube');
 
   const videoHtml = hasVideo
     ? `<div class="proj-section proj-video" id="sec-video">
-        ${thumbUrl ? `<img class="proj-video-thumb" src="${thumbUrl}" alt="${p.title}">` : ''}
+        ${thumbUrl ? `<img class="proj-video-thumb" src="${thumbUrl}" alt="${title}">` : ''}
         <a class="proj-video-play" href="${p.link}" target="_blank" rel="noopener">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
             <polygon points="6,3 21,12 6,21" fill="white"/>
@@ -688,18 +855,19 @@ function openProject(id, { push = true } = {}) {
   const metaHtml = p.meta?.length
     ? `<div class="proj-meta">${p.meta.map(m =>
         `<div class="proj-meta-item">
-          <span class="proj-meta-label">${m.label}</span>
-          <span class="proj-meta-val">${m.value}</span>
+          <span class="proj-meta-label">${trMetaLabel(m.label)}</span>
+          <span class="proj-meta-val">${trMetaValue(m.value)}</span>
         </div>`).join('')}</div>`
     : '';
 
   // Credits
+  const desc = trDesc(p);
   const creditsHtml = (p.desc || p.meta?.length)
     ? `<div class="proj-section proj-info" id="sec-credits">
         <div class="proj-info-left">
-          <h2 class="proj-title">${p.title}</h2>
-          <div class="proj-subtitle">${p.subtitle}</div>
-          ${p.desc ? `<p class="proj-desc">${p.desc}</p>` : ''}
+          <h2 class="proj-title">${title}</h2>
+          <div class="proj-subtitle">${trSubtitle(p.subtitle)}</div>
+          ${desc ? `<p class="proj-desc">${desc}</p>` : ''}
         </div>
         ${metaHtml}
       </div>`
@@ -710,7 +878,7 @@ function openProject(id, { push = true } = {}) {
     ? `<div class="proj-section proj-screenshots" id="sec-screenshots">
         <div class="proj-gallery">${imgs.map(src =>
           `<div class="gimg" data-src="${src}">
-            <img src="${src}" alt="${p.title}" loading="lazy">
+            <img src="${src}" alt="${title}" loading="lazy">
           </div>`).join('')}
         </div>
       </div>`
@@ -724,14 +892,14 @@ function openProject(id, { push = true } = {}) {
             <line x1="20" y1="5" x2="2" y2="5" stroke="white" stroke-width="0.8"/>
             <polyline points="6,1 2,5 6,9" fill="none" stroke="white" stroke-width="0.8"/>
           </svg>
-          BACK
+          ${t('back')}
         </span>
       </div>
       <div class="proj-topbar-center">
-        <span class="proj-top-name" data-page="home">VITALY SMALKO</span>
+        <span class="proj-top-name" data-page="home">${t('brand.name')}</span>
       </div>
       <div class="proj-topbar-right">
-        <span class="proj-top-title">${p.title}</span>
+        <span class="proj-top-title">${title}</span>
       </div>
     </div>
     ${creditsHtml}
@@ -770,7 +938,7 @@ function openProject(id, { push = true } = {}) {
     });
   });
 
-  if (mobPageTitle) mobPageTitle.textContent = p.title;
+  if (mobPageTitle) mobPageTitle.textContent = title;
 
   if (push) {
     history.pushState({ page: 'project', id, fromCat: prevCat }, '', `/${p.category}/${slugify(id)}`);
@@ -876,6 +1044,50 @@ function routeFromUrl(push = false) {
 }
 
 window.addEventListener('popstate', () => routeFromUrl(false));
+
+
+// ═══════════════════════════════════════════════════════════════
+//  I18N — применение перевода и переключение языка
+// ═══════════════════════════════════════════════════════════════
+function applyStaticI18n() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === currentLang);
+  });
+  document.documentElement.lang = currentLang;
+  document.title = t('title.tag');
+}
+
+function setLang(lang) {
+  if (lang !== 'en' && lang !== 'ru') return;
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  applyStaticI18n();
+
+  // Пересобрать уже построенные страницы-гриды (подписи карточек) —
+  // дёшево даже если страница сейчас не видна
+  builtSet.forEach(page => {
+    if (page === 'about') return; // about не завязан на PROJECTS/meta
+    const target = pageEls[page];
+    if (target) buildCatPage(page, target);
+  });
+  if (mobPageTitle && document.body.classList.contains('is-page') && catNames[currentPage]) {
+    mobPageTitle.textContent = t('nav.' + currentPage);
+  }
+
+  // Открытая карточка проекта — перерисовать с новым языком, без пуша в историю
+  if (document.body.classList.contains('is-project') && currentProjectId) {
+    openProject(currentProjectId, { push: false });
+  }
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+
+applyStaticI18n();
 
 // ═══════════════════════════════════════════════════════════════
 //  INIT

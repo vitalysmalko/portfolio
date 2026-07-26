@@ -251,6 +251,47 @@ body.is-project .proj-panel-nav {
   border-bottom: 1px solid var(--white);
 }
 
+/* ─── LANG TOGGLE — прибит к самому низу, по центру левой панели ────── */
+.lang-toggle {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+body.is-project .lang-toggle { display: none; }
+
+.lang-btn {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--dim);
+  cursor: pointer;
+  padding: 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.lang-btn:hover { color: var(--white); }
+
+.lang-btn.active {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.lang-sep {
+  color: var(--line);
+  font-size: 18px;
+}
+
+.lang-toggle-mob {
+  margin: 24px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
 /* ─── MOBILE HEADER ─────────────────────────────────────────────── */
 .mob-header {
   display: none;
@@ -774,14 +815,13 @@ body.is-page #main {
 }
 
 /* ─── ABOUT ──────────────────────────────────────────────────────── */
-.about-inner { max-width: 720px; }
+.about-inner { max-width: 720px; margin: 0 auto; }
 
 .about-bio {
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.3px;
   color: #fff;
-  margin-bottom: 40px;
 }
 
 .about-bio em { color: var(--dim); font-style: normal; }
@@ -790,7 +830,10 @@ body.is-page #main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-bottom: 40px;
 }
+
+.about-photos:empty { margin-bottom: 0; }
 
 .about-photo {
   width: 100%;

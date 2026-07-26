@@ -28,17 +28,22 @@
 <!-- ░░ 4. LEFT PANEL ░░ -->
   <aside class="panel" id="panel">
     <div class="panel-brand">
-      <a class="p-name" data-page="home">VITALY SMALKO</a>
-      <span class="p-role">DIRECTOR OF PHOTOGRAPHY</span>
+      <a class="p-name" data-page="home" data-i18n="brand.name">VITALY SMALKO</a>
+      <span class="p-role" data-i18n="role">DIRECTOR OF PHOTOGRAPHY</span>
     </div>
     <nav class="p-nav" id="p-nav">
-      <a href="/film" data-page="film">FILM</a>
-      <a href="/commercial" data-page="commercial">COMMERCIAL</a>
-      <a href="/music-video" data-page="music-video">MUSIC VIDEO</a>
-      <a href="/about" data-page="about">ABOUT</a>
-      <a href="/contact" data-page="contact">CONTACT</a>
+      <a href="/film" data-page="film" data-i18n="nav.film">FILM</a>
+      <a href="/commercial" data-page="commercial" data-i18n="nav.commercial">COMMERCIAL</a>
+      <a href="/music-video" data-page="music-video" data-i18n="nav.music-video">MUSIC VIDEO</a>
+      <a href="/about" data-page="about" data-i18n="nav.about">ABOUT</a>
+      <a href="/contact" data-page="contact" data-i18n="nav.contact">CONTACT</a>
     </nav>
     <nav class="proj-panel-nav" id="proj-panel-nav"></nav>
+    <div class="lang-toggle" id="lang-toggle">
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+    </div>
   </aside>
 
   <!-- ░░ 5. MOBILE HEADER ░░ -->
@@ -51,10 +56,10 @@
     </button>
     <div class="mob-brand">
       <div class="mob-brand-row">
-        <a class="mob-name" data-page="home">VITALY SMALKO</a>
+        <a class="mob-name" data-page="home" data-i18n="brand.name">VITALY SMALKO</a>
         <span class="mob-page-title" id="mob-page-title"></span>
       </div>
-      <span class="mob-role">DIRECTOR OF PHOTOGRAPHY</span>
+      <span class="mob-role" data-i18n="role">DIRECTOR OF PHOTOGRAPHY</span>
     </div>
     <button class="burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -63,20 +68,25 @@
 
   <!-- ░░ 6. MOBILE NAV ░░ -->
   <div class="mob-nav" id="mob-nav">
-    <a href="/film" data-page="film">FILM</a>
-    <a href="/commercial" data-page="commercial">COMMERCIAL</a>
-    <a href="/music-video" data-page="music-video">MUSIC VIDEO</a>
-    <a href="/about" data-page="about">ABOUT</a>
-    <a href="/contact" data-page="contact">CONTACT</a>
+    <a href="/film" data-page="film" data-i18n="nav.film">FILM</a>
+    <a href="/commercial" data-page="commercial" data-i18n="nav.commercial">COMMERCIAL</a>
+    <a href="/music-video" data-page="music-video" data-i18n="nav.music-video">MUSIC VIDEO</a>
+    <a href="/about" data-page="about" data-i18n="nav.about">ABOUT</a>
+    <a href="/contact" data-page="contact" data-i18n="nav.contact">CONTACT</a>
+    <div class="lang-toggle lang-toggle-mob" id="lang-toggle-mob">
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+    </div>
   </div>
 
   <!-- ░░ 6b. MOBILE HOME NAV (bottom) ░░ -->
   <nav class="mob-home-nav" id="mob-home-nav">
-    <a href="/film" data-page="film">FILM</a>
-    <a href="/commercial" data-page="commercial">COMMERCIAL</a>
-    <a href="/music-video" data-page="music-video">MUSIC VIDEO</a>
-    <a href="/about" data-page="about">ABOUT</a>
-    <a href="/contact" data-page="contact">CONTACT</a>
+    <a href="/film" data-page="film" data-i18n="nav.film">FILM</a>
+    <a href="/commercial" data-page="commercial" data-i18n="nav.commercial">COMMERCIAL</a>
+    <a href="/music-video" data-page="music-video" data-i18n="nav.music-video">MUSIC VIDEO</a>
+    <a href="/about" data-page="about" data-i18n="nav.about">ABOUT</a>
+    <a href="/contact" data-page="contact" data-i18n="nav.contact">CONTACT</a>
   </nav>
 
   <!-- ░░ 7. MAIN CONTENT (category pages) ░░ -->
@@ -91,17 +101,17 @@
 
     <div class="page" id="page-about">
       <div class="contact-inner about-inner">
-        <p class="about-bio">
+        <div class="about-photos" id="about-photos">
+          <!-- Личные фото — подставятся, когда появятся файлы в projects/about/ -->
+        </div>
+        <p class="about-bio" data-i18n="about.bio">
           Born on April 4, 1997, in Moscow, Vitaly Smalko is a Director of Photography
           working across Music Videos and Feature Films. A graduate of the Moscow Film
           School, he brings extensive experience on large-scale productions and shoots on
           any camera system on the planet, with a particular love for one-shot
-          productions. His short films have screened at festivals, winning Best
-          Cinematography at Most. Goryzonty.
+          productions. His short films have screened at festivals, winning an award for
+          Best Cinematography.
         </p>
-        <div class="about-photos" id="about-photos">
-          <!-- Личные фото — подставятся, когда появятся файлы в projects/about/ -->
-        </div>
       </div>
     </div>
 
@@ -121,7 +131,7 @@
             <a href="mailto:vitalysmalko@gmail.com">VITALYSMALKO@GMAIL.COM</a>
           </div>
         </div>
-        <p class="cnote">MOSCOW — AVAILABLE FOR TRAVEL</p>
+        <p class="cnote" data-i18n="contact.note">MOSCOW — AVAILABLE FOR TRAVEL</p>
       </div>
     </div>
 
@@ -130,7 +140,7 @@
     <span>/</span>
     <a href="https://instagram.com/cameraeb" target="_blank">INSTAGRAM</a>
     <span>/</span>
-    <a href="mailto:vitalysmalko@gmail.com">MAIL</a>
+    <a href="mailto:vitalysmalko@gmail.com" data-i18n="footer.mail">MAIL</a>
   </footer>
 
   </main>
