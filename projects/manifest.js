@@ -355,6 +355,27 @@ window.PROJECTS_MANIFEST = {
     "Untitled_3.2.1.webp",
     "Untitled_3.5.1.webp"
   ],
+  "slaughter to prevail": [
+    "OBL.webp",
+    "OBL2.webp",
+    "OBL3.webp",
+    "OBL4.webp",
+    "Still 2026-07-26 054508_1.1.1.webp",
+    "Still 2026-07-26 054508_1.1.10.webp",
+    "Still 2026-07-26 054508_1.1.11.webp",
+    "Still 2026-07-26 054508_1.1.12.webp",
+    "Still 2026-07-26 054508_1.1.13.webp",
+    "Still 2026-07-26 054508_1.1.14.webp",
+    "Still 2026-07-26 054508_1.1.15.webp",
+    "Still 2026-07-26 054508_1.1.16.webp",
+    "Still 2026-07-26 054508_1.1.18.webp",
+    "Still 2026-07-26 054508_1.1.3.webp",
+    "Still 2026-07-26 054508_1.1.6.webp",
+    "Still 2026-07-26 054508_1.1.7.webp",
+    "Still 2026-07-26 054508_1.1.8.webp",
+    "Still 2026-07-26 054508_1.1.9.webp",
+    "obl6.webp"
+  ],
   "terelya - otpusti": [
     "OBL.webp",
     "OBL1.webp",
@@ -630,6 +651,22 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/siberia/OBL.webp",
     "project": "siberia"
+  },
+  {
+    "src": "projects/slaughter to prevail/OBL2.webp",
+    "project": "slaughter to prevail"
+  },
+  {
+    "src": "projects/slaughter to prevail/OBL3.webp",
+    "project": "slaughter to prevail"
+  },
+  {
+    "src": "projects/slaughter to prevail/OBL4.webp",
+    "project": "slaughter to prevail"
+  },
+  {
+    "src": "projects/slaughter to prevail/obl6.webp",
+    "project": "slaughter to prevail"
   },
   {
     "src": "projects/terelya - otpusti/OBL1.webp",

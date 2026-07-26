@@ -40,12 +40,13 @@ const PROJECTS = [
     category: 'film',
     title: 'KNIZHNIE ROMANTIKI',
     subtitle: 'Short Film · Dir. Nikolay Chernobayev',
-    desc: 'A romantic story from Saint Petersburg.',
+    desc: 'A romantic story from Saint Petersburg. Best Cinematography at the Most Gorizonty film festival.',
     stills: [],
     meta: [
       { label: 'YEAR',      value: '2025' },
       { label: 'LOCATION',  value: 'SAINT PETERSBURG' },
-      { label: 'FESTIVALS', value: 'SVYATAYA ANNA · TAVRIDA ART' },
+      { label: 'AWARD',     value: 'BEST CINEMATOGRAPHY — MOST GORIZONTY' },
+      { label: 'FESTIVALS', value: 'MOST GORIZONTY · SVYATAYA ANNA · TAVRIDA ART' },
     ],
     link: '',
     linkLabel: 'TRAILER',
@@ -129,6 +130,21 @@ const PROJECTS = [
 
   // ── COMMERCIAL ──────────────────────────────────────────────
   {
+    id: 'mediabasket',
+    category: 'commercial',
+    title: 'MEDIABASKET',
+    subtitle: 'Commercial',
+    desc: '',
+    stills: [],
+    meta: [
+      { label: 'TYPE', value: 'PROMO' },
+      { label: 'YEAR', value: '2026' },
+    ],
+    link: '',
+    linkLabel: 'WATCH',
+  },
+
+  {
     id: 'pogoda na tnt',
     category: 'commercial',
     title: 'POGODA NA TNT',
@@ -196,23 +212,23 @@ const PROJECTS = [
     linkLabel: 'WATCH',
   },
 
+
+  // ── MUSIC VIDEO ─────────────────────────────────────────────
   {
-    id: 'mediabasket',
-    category: 'commercial',
-    title: 'MEDIABASKET',
-    subtitle: 'Commercial',
-    desc: '',
+    id: 'slaughter to prevail',
+    category: 'music-video',
+    title: 'KOSCHEI',
+    subtitle: 'Slaughter To Prevail · Dir. Vladimir Repin',
+    desc: 'My second major work with the AVE Warriors team.',
     stills: [],
     meta: [
-      { label: 'TYPE', value: 'PROMO' },
-      { label: 'YEAR', value: '2026' },
+      { label: 'YEAR',      value: '2026' },
+      { label: 'DIRECTOR',  value: 'VLADIMIR REPIN' },
     ],
-    link: '',
+    link: 'https://www.youtube.com/watch?v=lYrqo5rKbpQ',
     linkLabel: 'WATCH',
   },
 
-
-  // ── MUSIC VIDEO ─────────────────────────────────────────────
   {
     id: 'ditophone - tezhe',
     category: 'music-video',
@@ -471,13 +487,13 @@ const pageEls = {
   commercial:      document.getElementById('page-commercial'),
   'music-video':   document.getElementById('page-music-video'),
   'brand-content': document.getElementById('page-brand-content'),
-  reels:           document.getElementById('page-reels'),
+  about:           document.getElementById('page-about'),
   contact:         document.getElementById('page-contact'),
   project:         document.getElementById('page-project'),
 };
 
 const builtSet = new Set();
-const catNames = { film:'FILM', commercial:'COMMERCIAL', 'music-video':'MUSIC VIDEO', 'brand-content':'BRAND CONTENT', reels:'REELS' };
+const catNames = { film:'FILM', commercial:'COMMERCIAL', 'music-video':'MUSIC VIDEO', 'brand-content':'BRAND CONTENT' };
 
 let prevCat = null; // запоминаем откуда пришли
 
@@ -511,6 +527,10 @@ function navigate(page, fromCat, { push = true } = {}) {
       if (catNames[page] && !builtSet.has(page)) {
         buildCatPage(page, target);
         builtSet.add(page);
+      }
+      if (page === 'about' && !builtSet.has('about')) {
+        buildAboutPage();
+        builtSet.add('about');
       }
     }
   }
@@ -606,6 +626,20 @@ function buildCatPage(cat, container) {
       flashFade(() => openProject(card.dataset.id));
     });
   });
+}
+
+
+// ═══════════════════════════════════════════════════════════════
+//  ABOUT PAGE — личные фото, если появятся в projects/about/
+// ═══════════════════════════════════════════════════════════════
+function buildAboutPage() {
+  const container = document.getElementById('about-photos');
+  if (!container) return;
+  const imgs = getProjectImages('about');
+  if (imgs.length === 0) return; // фото ещё не добавлены — просто пусто
+  container.innerHTML = imgs
+    .map(src => `<img class="about-photo" src="${src}" alt="Vitaly Smalko" loading="lazy">`)
+    .join('');
 }
 
 

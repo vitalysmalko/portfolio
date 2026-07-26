@@ -773,6 +773,35 @@ body.is-page #main {
   text-align: center;
 }
 
+/* ─── ABOUT ──────────────────────────────────────────────────────── */
+.about-inner { max-width: 720px; }
+
+.about-bio {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.about-bio em { color: var(--dim); font-style: normal; }
+
+.about-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .about-photos { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ─── CONTACT ────────────────────────────────────────────────────── */
 .contact-inner {
   padding: 80px 48px;
