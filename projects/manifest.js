@@ -230,6 +230,41 @@ window.PROJECTS_MANIFEST = {
     "Still 2025-07-07 014808_2.4.1.webp",
     "Still 2025-07-07 021243_1.4.6.webp"
   ],
+  "nichya": [
+    "Still 2026-07-26 052737_1.13.1.webp",
+    "Still 2026-07-26 052737_1.16.1.webp",
+    "Still 2026-07-26 052737_1.18.1.webp",
+    "Still 2026-07-26 052737_1.18.2.webp",
+    "Still 2026-07-26 052737_1.19.3.webp",
+    "Still 2026-07-26 052737_1.30.1.webp",
+    "Still 2026-07-26 052737_1.30.2.webp",
+    "Still 2026-07-26 052737_1.32.1.webp",
+    "Still 2026-07-26 052737_1.33.1.webp",
+    "Still 2026-07-26 052737_1.33.2.webp",
+    "Still 2026-07-26 052737_1.33.3.webp",
+    "Still 2026-07-26 052737_1.34.1.webp",
+    "Still 2026-07-26 052737_1.34.2.webp",
+    "Still 2026-07-26 052737_1.37.1.webp",
+    "Still 2026-07-26 052737_1.38.2.webp",
+    "Still 2026-07-26 052737_1.38.3.webp",
+    "Still 2026-07-26 052737_1.39.1.webp",
+    "Still 2026-07-26 052737_1.4.1.webp",
+    "Still 2026-07-26 052737_1.40.1.webp",
+    "Still 2026-07-26 052737_1.40.2.webp",
+    "Still 2026-07-26 052737_1.40.3.webp",
+    "Still 2026-07-26 052737_1.41.1.webp",
+    "Still 2026-07-26 052737_1.44.1.webp",
+    "Still 2026-07-26 052737_1.44.2.webp",
+    "Still 2026-07-26 052737_1.7.2.webp",
+    "Still 2026-07-26 052737_1.8.1.webp",
+    "Still 2026-07-26 052737_1.9.1.webp",
+    "Still 2026-07-26 052737_1.9.2.webp",
+    "obl.webp",
+    "obl2.webp",
+    "obl3.webp",
+    "obl4.webp",
+    "obl5.webp"
+  ],
   "ohota": [
     "OBL.webp",
     "Still 2026-04-02 152312_1.1.1.webp",
@@ -547,6 +582,22 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/menuet/OBL3.webp",
     "project": "menuet"
+  },
+  {
+    "src": "projects/nichya/obl2.webp",
+    "project": "nichya"
+  },
+  {
+    "src": "projects/nichya/obl3.webp",
+    "project": "nichya"
+  },
+  {
+    "src": "projects/nichya/obl4.webp",
+    "project": "nichya"
+  },
+  {
+    "src": "projects/nichya/obl5.webp",
+    "project": "nichya"
   },
   {
     "src": "projects/ohota/OBL.webp",

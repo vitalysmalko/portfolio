@@ -67,6 +67,21 @@ const PROJECTS = [
   },
 
   {
+    id: 'nichya',
+    category: 'film',
+    title: 'NICHYA',
+    subtitle: 'Short Film · Dir. Diana Dargaeva',
+    desc: 'A slice-of-life drama about a girl nobody cares about.',
+    stills: [],
+    meta: [
+      { label: 'YEAR',      value: '2026' },
+      { label: 'DIRECTOR',  value: 'DIANA DARGAEVA' },
+    ],
+    link: '',
+    linkLabel: 'WATCH',
+  },
+
+  {
     id: 'ya bolshe tak ne budu',
     category: 'film',
     title: 'YA BOLSHE TAK NE BUDU',
