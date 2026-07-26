@@ -181,6 +181,21 @@ const PROJECTS = [
     linkLabel: 'WATCH',
   },
 
+  {
+    id: 'mediabasket',
+    category: 'commercial',
+    title: 'MEDIABASKET',
+    subtitle: 'Commercial',
+    desc: '',
+    stills: [],
+    meta: [
+      { label: 'TYPE', value: 'PROMO' },
+      { label: 'YEAR', value: '2026' },
+    ],
+    link: '',
+    linkLabel: 'WATCH',
+  },
+
 
   // ── MUSIC VIDEO ─────────────────────────────────────────────
   {

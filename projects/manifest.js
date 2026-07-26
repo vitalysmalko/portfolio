@@ -183,7 +183,24 @@ window.PROJECTS_MANIFEST = {
     "Untitled_1.7.3.webp",
     "still-1.webp"
   ],
-  "mediabasket": [],
+  "mediabasket": [
+    "OBL.webp",
+    "Obl1.webp",
+    "Still 2026-07-26 045744_1.1.1.webp",
+    "Still 2026-07-26 045744_1.1.10.webp",
+    "Still 2026-07-26 045744_1.1.11.webp",
+    "Still 2026-07-26 045744_1.1.12.webp",
+    "Still 2026-07-26 045744_1.1.13.webp",
+    "Still 2026-07-26 045744_1.1.14.webp",
+    "Still 2026-07-26 045744_1.1.2.webp",
+    "Still 2026-07-26 045744_1.1.3.webp",
+    "Still 2026-07-26 045744_1.1.5.webp",
+    "Still 2026-07-26 045744_1.1.7.webp",
+    "Still 2026-07-26 045744_1.1.8.webp",
+    "Still 2026-07-26 045744_1.1.9.webp",
+    "obl2.webp",
+    "obl3.webp"
+  ],
   "menuet": [
     "OBL.webp",
     "OBL1.webp",
@@ -506,6 +523,18 @@ window.SLIDES_MANIFEST = [
   {
     "src": "projects/letoile/OBL.webp",
     "project": "letoile"
+  },
+  {
+    "src": "projects/mediabasket/Obl1.webp",
+    "project": "mediabasket"
+  },
+  {
+    "src": "projects/mediabasket/obl2.webp",
+    "project": "mediabasket"
+  },
+  {
+    "src": "projects/mediabasket/obl3.webp",
+    "project": "mediabasket"
   },
   {
     "src": "projects/menuet/OBL1.webp",
