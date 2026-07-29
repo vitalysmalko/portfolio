@@ -84,6 +84,7 @@ const PROJECTS = [
     meta: [
       { label: 'YEAR',      value: '2026' },
       { label: 'DIRECTOR',  value: 'DIANA DARGAEVA' },
+      { label: 'STARRING',  value: 'VARVARA VOLODINA, ALISA LOZOVSKAYA' },
     ],
     link: '',
     linkLabel: 'WATCH',
