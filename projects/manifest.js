@@ -1,4 +1,8 @@
 window.PROJECTS_MANIFEST = {
+  "about": [
+    "vitaly-1.webp",
+    "vitaly-2.webp"
+  ],
   "afisha daily": [
     "OBL.webp",
     "OBL1.webp",
