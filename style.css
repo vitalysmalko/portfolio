@@ -401,6 +401,9 @@ body.is-project .lang-toggle { display: none; }
 .mob-nav a:first-child { border-top: 1px solid var(--line); }
 .mob-nav a:hover, .mob-nav a.active { color: var(--white); }
 
+/* ─── MOBILE HOME NAV (bottom) — скрыт вне мобильной ширины ──────── */
+.mob-home-nav { display: none; }
+
 /* ─── MAIN CONTENT ──────────────────────────────────────────────── */
 #main {
   margin-left: var(--w);
