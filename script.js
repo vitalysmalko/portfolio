@@ -797,13 +797,13 @@ function buildCatPage(cat, container) {
 //  ABOUT PAGE — личные фото, если появятся в projects/about/
 // ═══════════════════════════════════════════════════════════════
 function buildAboutPage() {
-  const container = document.getElementById('about-photos');
-  if (!container) return;
+  const top    = document.getElementById('about-photo-top');
+  const bottom = document.getElementById('about-photo-bottom');
+  if (!top || !bottom) return;
   const imgs = getProjectImages('about');
-  if (imgs.length === 0) return; // фото ещё не добавлены — просто пусто
-  container.innerHTML = imgs
-    .map(src => `<img class="about-photo" src="${src}" alt="${t('brand.name')}" loading="lazy">`)
-    .join('');
+  const [imgTop, imgBottom] = imgs;
+  top.innerHTML    = imgTop    ? `<img class="about-photo" src="${imgTop}" alt="${t('brand.name')}" loading="lazy">`    : '';
+  bottom.innerHTML = imgBottom ? `<img class="about-photo" src="${imgBottom}" alt="${t('brand.name')}" loading="lazy">` : '';
 }
 
 
